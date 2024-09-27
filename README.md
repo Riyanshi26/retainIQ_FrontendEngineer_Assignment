@@ -1,4 +1,4 @@
-This is a submission for RetainIQ assignment that has been deployed on GitHub. Follow the steps below to run this project on your local machine.
+This is the submission for RetainIQ assignment that has been deployed on GitHub. Follow the steps below to run this project on your local machine.
 
 ## Prerequisites
 
