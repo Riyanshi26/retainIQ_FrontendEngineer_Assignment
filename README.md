@@ -15,7 +15,7 @@ Follow these steps to get the project running locally:
 
 ### 1. Clone the Repository
 First, clone the repository to your local machine. Run the following command in your terminal:
-- git clone https://github.com/your-username/your-repository-name.git
+- git clone [https://github.com/your-username/your-repository-name.git](https://github.com/Riyanshi26/retainIQ_FrontendEngineer_Assignment.git)
 
 ### Navigate to the Project Directory
 ### Install dependencies
