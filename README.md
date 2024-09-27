@@ -11,7 +11,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 Follow these steps to get the project running locally:
 
-### 1. Clone the Repository
+### Clone the Repository
 First, clone the repository to your local machine. Run the following command in your terminal:
 - git clone https://github.com/Riyanshi26/retainIQ_FrontendEngineer_Assignment.git
 
