@@ -1,6 +1,5 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { HiDotsVertical } from 'react-icons/hi';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 
 import styles from './Content.module.css';

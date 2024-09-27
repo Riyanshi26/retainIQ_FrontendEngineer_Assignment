@@ -6,7 +6,7 @@ import { MdOutlineArrowBack } from "react-icons/md";
 import Content from '../Content/Content';
 import ProductList from '../../../Data/product';
 import { arrayMove } from '@dnd-kit/sortable';
-import { DndContext, closestCorners, useSensors, useSensor, PointerSensor } from "@dnd-kit/core";
+import { DndContext, closestCorners, useSensors, useSensor, PointerSensor, DragEndEvent } from "@dnd-kit/core";
 import { Product } from '../../../Types/types';
 
 const MainArea = () => {
@@ -22,14 +22,14 @@ const MainArea = () => {
         })
       )
 
-    const handleDragEnd = (event: any) => {
+    const handleDragEnd = (event: DragEndEvent) => {
         const { active, over } = event;
 
         if (!over || active.id === over.id) return;
 
         setProductList((products) => {
-            const originalPos = getProductPos(active.id);
-            const newPos = getProductPos(over.id);
+            const originalPos = getProductPos(Number(active.id));
+            const newPos = getProductPos(Number(over.id));
 
             return arrayMove(products, originalPos, newPos);
         });
