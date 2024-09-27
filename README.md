@@ -5,7 +5,7 @@ This is the submission for RetainIQ assignment that has been deployed on GitHub.
 Before you begin, ensure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/) (version 18.x or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) package manager
+- [npm](https://www.npmjs.com/) 
 
 ## Getting Started
 
