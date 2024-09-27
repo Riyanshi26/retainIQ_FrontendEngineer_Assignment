@@ -17,11 +17,11 @@ const ProductsList: Product[] =[
       ],
       "product_variants": [
         {
-          "image": "/images/suit.jpeg",
+          "image": "/images/dress7.jpeg",
           "caption": "Aniug8"
         },
         {
-          "image": "/images/suit.jpeg",
+          "image": "/images/dress8.jpeg",
           "caption": "Anniversary Sale scsd sf fg dre"
         }
       ]
@@ -37,11 +37,11 @@ const ProductsList: Product[] =[
       ],
       "product_variants": [
         {
-          "image": "/images/suit.jpeg",
+          "image": "/images/dress7.jpeg",
           "caption": "Anniversary Sale scsd sf fg dre"
         },
         {
-          "image": "/images/suit.jpeg",
+          "image": "/images/dress5.jpeg",
           "caption": "Anniv6780"
         }
       ]
@@ -63,10 +63,10 @@ const ProductsList: Product[] =[
       "product_variants": [
         {
           "image": "/images/suit.jpeg",
-          "caption": "Anniversary Sale scsd sf fg dre"
+          "caption": "Anarkali suits"
         },
         {
-          "image": "/images/suit.jpeg",
+          "image": "/images/dress1.jpeg",
           "caption": "Anniversary Sale scsd sf fg dre"
         }
       ]
