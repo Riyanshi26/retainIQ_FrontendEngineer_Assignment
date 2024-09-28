@@ -11,6 +11,7 @@ import ImageSelectionModal from '../ImageSelectionModal/ImageSelectionModal';
 import { RiDeleteBinLine } from "react-icons/ri";
 import { IoAddOutline } from 'react-icons/io5'
 import Snackbar from '../Snackbar/Snackbar';
+import { ScrollSyncPane } from 'react-scroll-sync';
 
 interface ListItemProps {
     item: Product;
@@ -138,7 +139,7 @@ const Products = ({ item, index, setProductList }: ListItemProps) => {
                     ))}
                 </div>
             </div>
-
+            <ScrollSyncPane>
             <div className={styles.variants}>
                 {item.product_variants.map((variant, idx) => (
                     <div className={styles.imageContainer} key={`variant-${idx}`}>
@@ -171,6 +172,7 @@ const Products = ({ item, index, setProductList }: ListItemProps) => {
                     </div>
                 </div>
             </div>
+            </ScrollSyncPane>
 
             <ImageSelectionModal
                 isOpen={isModalOpen}

@@ -8,6 +8,8 @@ import Products from '../Products/Products'
 import { IoAddOutline } from 'react-icons/io5'
 import { RiDeleteBinLine } from "react-icons/ri";
 import Snackbar from '../Snackbar/Snackbar';
+import { ScrollSyncPane } from 'react-scroll-sync';
+
 
 interface ItemsListProps {
   productList: Product[];
@@ -65,14 +67,18 @@ const Content = ({ productList, setProductList }: ItemsListProps) => {
         <div className={styles.filterHeading}>
           <h3>Product Filter</h3>
         </div>
-        <div className={styles.variantHeadingDiv}>
-          {productList.length > 0 && productList[0].product_variants.map((item, index) => (
-            <div key={index} className={styles.variantHeading}>
-              <h3>{index === 0 ? 'Primary Variant' : `Variant ${index + 1}`}</h3>
-              <RiDeleteBinLine style={{ cursor: "pointer" }} onClick={() => handleColumnDelete(index)} />
-            </div>
-          ))}
-        </div>
+
+        <ScrollSyncPane>
+          <div className={styles.variantHeadingDiv}>
+            {productList.length > 0 && productList[0].product_variants.map((item, index) => (
+              <div key={index} className={styles.variantHeading}>
+                <h3>{index === 0 ? 'Primary Variant' : `Variant ${index + 1}`}</h3>
+                <RiDeleteBinLine style={{ cursor: "pointer" }} onClick={() => handleColumnDelete(index)} />
+              </div>
+            ))}
+            <div className={styles.blankSpace}></div>
+          </div>
+        </ScrollSyncPane>
       </div>
 
       <SortableContext items={productList.map(product => product.id)} strategy={verticalListSortingStrategy}>

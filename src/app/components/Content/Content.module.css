@@ -26,9 +26,11 @@
             white-space: nowrap;
         }
         .variantHeadingDiv{
+            overflow-x: auto;
             display: flex;
             width: auto;
             flex-grow: 1;
+            scrollbar-width: none;
         }
         .variantHeading {
             display: flex;
@@ -39,6 +41,10 @@
             flex-shrink: 0; 
             width: 14.1rem;
             white-space: nowrap;
+            
+        }
+        .blankSpace{
+            min-width: 12rem;
         }
     }
 

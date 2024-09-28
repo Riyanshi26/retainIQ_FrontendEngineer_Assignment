@@ -8,6 +8,7 @@ import ProductList from '../../../Data/product';
 import { arrayMove } from '@dnd-kit/sortable';
 import { DndContext, closestCorners, useSensors, useSensor, PointerSensor, DragEndEvent } from "@dnd-kit/core";
 import { Product } from '../../../Types/types';
+import {ScrollSync} from 'react-scroll-sync'
 
 const MainArea = () => {
     const [productList, setProductList] = useState<Product[]>(ProductList);
@@ -50,11 +51,13 @@ const MainArea = () => {
                     Publish Feed
                 </button>
             </div>
+            <ScrollSync>
             <div className={styles.mainContent}>
                 <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCorners} sensors={sensors}>
                     <Content productList={productList} setProductList={setProductList}/>
                 </DndContext>
             </div>
+            </ScrollSync>
 
         </div>
     );
